@@ -1,0 +1,1 @@
+premake4 --file=premake_clean.lua vs2010

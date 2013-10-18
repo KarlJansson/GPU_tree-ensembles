@@ -1,0 +1,49 @@
+GPU decision tree ensembles gpuRF and gpuERT - Command line interface version
+-----------------------------------------------------------------------------
+
+**************************
+Supported input formats:
+**************************
+.arff, .rds_txt, .txt
+
+It is safest to use .arff files but raw text files can also work.
+Make sure there are no trailing line breaks in the dataset files.
+
+**************************
+Supported parameters:
+**************************
+a
+	Defines the algorithm used; GPURF, GPUERT or CPUERT.
+	Default: CPUERT
+d
+	Dataset path.
+e
+	Evaluation method used; cValidation or pSplit.
+	Default: cValidation
+pDepth
+	Numeric parameter value for random forest algorithms.
+	The maximum depth of the forest.
+	Default: 100
+pE
+	Numeric evaluation parameter.
+	Number of folds or the percentage used for training.
+	Default: 10/70
+pK
+	Numeric parameter value for random forest algorithms.
+	The number of features considered in each split.
+	Default: log(numFeatures)+1
+pMIPN
+	Numeric parameter value for random forest algorithms.
+	The maximum number of nodes in a node before it turns into a leaf.
+	Default: 10
+pSeed
+	Numeric parameter value for random forest algorithms.
+	The seed of the random number generators.
+	Default: 1
+pThreads
+	Number of threads/GPUs that will be used.
+	Default: All
+pTrees
+	Numeric parameter value for random forest algorithms.
+	The number of trees in the forest.
+	Default: 100

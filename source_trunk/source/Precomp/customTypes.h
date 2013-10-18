@@ -1,0 +1,53 @@
+namespace DataMiner{
+	class RandomForest;
+	class RandomTree;
+	class GraphicsManager;
+	class AlgorithmDataPack;
+	class DataCache;
+	class Bagger;
+	class Attribute;
+	class Value;
+	class Instance;
+	class IAlgorithm;
+	class DataDocument;
+	class VoteCollector;
+	class GUIManager;
+	class GUIGroup;
+	class MinerGUI;
+	class SerialRandomTree;
+	class SerialTreeNode;
+	class IEvaluation;
+	class CUDAManager;
+	class GraphicsFunction;
+	class IResultWriter;
+	class GPURandomForest;
+}
+
+typedef boost::shared_ptr<DataMiner::RandomForest> RandomForestPtr;
+typedef boost::shared_ptr<DataMiner::RandomTree> RandomTreePtr;
+typedef boost::shared_ptr<DataMiner::GraphicsManager> GraphicsManagerPtr;
+typedef boost::shared_ptr<DataMiner::AlgorithmDataPack> AlgorithmDataPackPtr;
+typedef boost::shared_ptr<DataMiner::DataCache> DataCachePtr;
+typedef boost::shared_ptr<DataMiner::Bagger> BaggerPtr;
+typedef boost::shared_ptr<DataMiner::Attribute> AttributePtr;
+typedef boost::shared_ptr<DataMiner::Value> ValuePtr;
+typedef boost::shared_ptr<DataMiner::Instance> InstancePtr;
+typedef boost::shared_ptr<DataMiner::IAlgorithm> IAlgorithmPtr;
+typedef boost::shared_ptr<DataMiner::DataDocument> DataDocumentPtr;
+typedef boost::shared_ptr<DataMiner::VoteCollector> VoteCollectorPtr;
+typedef boost::shared_ptr<DataMiner::GUIManager> GUIManagerPtr;
+typedef boost::shared_ptr<DataMiner::GUIGroup> GUIGroupPtr;
+typedef boost::shared_ptr<DataMiner::MinerGUI> MinerGUIPtr;
+typedef boost::shared_ptr<DataMiner::SerialRandomTree> SerialRandomTreePtr;
+typedef boost::shared_ptr<DataMiner::SerialTreeNode> SerialTreeNodePtr;
+typedef boost::shared_ptr<DataMiner::IEvaluation> IEvaluationPtr;
+typedef boost::shared_ptr<DataMiner::CUDAManager> CUDAManagerPtr;
+typedef boost::shared_ptr<DataMiner::GraphicsFunction> GraphicsFunctionPtr;
+typedef boost::shared_ptr<DataMiner::IResultWriter> IResultWriterPtr;
+typedef boost::shared_ptr<DataMiner::GPURandomForest> GPURandomForestPtr;
+
+typedef boost::shared_ptr<boost::mutex> MutexPtr;
+typedef boost::shared_ptr<boost::thread> ThreadPtr;
+typedef boost::shared_ptr<boost::condition_variable> ConditionPtr;
+typedef boost::shared_ptr<boost::barrier> BarrierPtr;
+typedef boost::shared_ptr<boost::timer> TimerPtr;
